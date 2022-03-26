@@ -1,0 +1,166 @@
+.landing {
+  height: 1200px;
+  background: url("/background.png") no-repeat top 50% center/cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .container {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 3em;
+    width: 1145px;
+    margin: -150px auto 80px auto;
+    .text {
+      h1 {
+        font-weight: 300;
+        font-size: 70px;
+        line-height: 85px;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        margin-bottom: 5px;
+      }
+      p {
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 29px;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+      }
+      .totals {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        div {
+          text-align: center;
+          h2 {
+            font-weight: 600;
+            font-size: 70px;
+            line-height: 50px;
+            letter-spacing: 0.05em;
+            color: #00fff0;
+            margin-bottom: 15px;
+          }
+          p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+          }
+        }
+      }
+      .btn {
+        margin-top: 45px;
+      }
+      border-radius: 10px;
+      a {
+        width: 281px;
+        height: 73px;
+        background: linear-gradient(
+          135deg,
+          rgba(58, 129, 191, 0.08) 0%,
+          rgba(65, 48, 90, 0.03) 100%
+        );
+        backdrop-filter: blur(25px);
+        border-style: solid;
+        border-width: 2px;
+        display: block;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 70px;
+        letter-spacing: 0.05em;
+        color: #00fff0;
+        text-align: center;
+        border-radius: 10px;
+      }
+    }
+    .image {
+      width: 384px;
+      height: 384px;
+      position: relative;
+      margin-top: 120px;
+      .creditCard {
+        width: 240px;
+        height: 185.25px;
+        position: relative;
+        transform: translateY(-115px) translateX(158px);
+      }
+      .elli2,
+      .elli1 {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+      }
+      .elli1 {
+        transform: translateY(-240px) translateX(350px);
+      }
+      .elli2 {
+        transform: translateY(-247px) translateX(330px);
+      }
+      .cardRectangle {
+        width: 40.68px;
+        height: 32.35px;
+        position: absolute;
+        transform: translateY(-220px) translateX(177px);
+      }
+      .cardName {
+        color: #000;
+        font-weight: 700;
+        position: absolute;
+        transform: translateY(-180px) translateX(170px) rotate(18deg);
+        font-size: 8px;
+      }
+      .dolarDiv {
+        position: absolute;
+        width: 87px;
+        height: 87px;
+        transform: translateY(154px) translateX(-20px);
+      }
+      .dolar {
+        position: absolute;
+        width: 36px;
+        height: 54px;
+        transform: translateY(170px) translateX(7px) rotate(-10deg);
+      }
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-weight: 700;
+        p {
+          letter-spacing: 0.04em;
+          color: #ffffff;
+          &:nth-of-type(1) {
+            font-size: 20px;
+            line-height: 33px;
+            font-weight: 700;
+          }
+          &:nth-of-type(2) {
+            height: 80px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 80px;
+            letter-spacing: 0.04em;
+
+            color: #ffffff;
+          }
+          &:nth-of-type(3) {
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 32px;
+          }
+        }
+        span {
+          font-weight: 500;
+          font-size: 20px;
+          color: #ffffff;
+          line-height: 33px;
+        }
+      }
+    }
+  }
+}

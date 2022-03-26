@@ -1,0 +1,33 @@
+.tokkens {
+  width: 1145px;
+  margin: 0 auto 67px auto;
+  position: relative;
+  min-height: 550px;
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+    margin-top: 55px;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    z-index: 2;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .background {
+    position: absolute;
+    width: 425px;
+    height: 161px;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    background: rgba(0, 255, 240, 0.7);
+    filter: blur(200px);
+  }
+}

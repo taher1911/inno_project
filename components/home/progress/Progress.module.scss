@@ -1,0 +1,72 @@
+.container {
+  width: 1145px;
+  margin: 0 auto 80px auto;
+  .progress {
+    height: 230px;
+    background: #1d1d1d;
+    border-radius: 10px;
+    margin-top: 45px;
+    padding: 35px 68px;
+    position: relative;
+    .progressBar {
+      height: 107px;
+      background: #482f3c;
+      transform: rotate(90deg) matrix(0, -1, -1, 0, 0, 0);
+      position: relative;
+      .procressActive {
+        height: 107px;
+        width: 48%;
+        background: #a54878;
+        position: relative;
+        .start {
+          position: absolute;
+          top: 0;
+          left: -6px;
+          opacity: 1;
+          transform: rotateY(3100deg);
+        }
+        .front {
+          position: absolute;
+          top: 0;
+          right: -7px;
+        }
+      }
+      .end {
+        position: absolute;
+        top: 0;
+        right: -7px;
+        opacity: 0.8;
+      }
+    }
+    .dates {
+      display: flex;
+      justify-content: space-between;
+      .startDate,
+      .endDate {
+        display: flex;
+        align-items: center;
+        .calender {
+          padding-top: 10px;
+          margin-right: 15px;
+          font-size: 2.5rem;
+          color: #a5a5a5;
+          font-weight: 500;
+        }
+        .information {
+          h4,
+          p {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+          }
+          h4 {
+            color: #ffffff;
+          }
+          p {
+            color: rgba(255, 255, 255, 0.6);
+          }
+        }
+      }
+    }
+  }
+}

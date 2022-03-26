@@ -1,0 +1,19 @@
+.textSection {
+  text-align: center;
+  h2 {
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 66px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
