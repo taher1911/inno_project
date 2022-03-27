@@ -77,6 +77,8 @@ const ProgressSection = () => {
             left: progresData ? "50%" : "-100%",
             opacity: progresData ? "1" : "0",
           }}
+          onMouseEnter={() => setProgressData(true)}
+          onMouseLeave={() => setProgressData(false)}
         >
           <h3>this is test data</h3>
           <p>
