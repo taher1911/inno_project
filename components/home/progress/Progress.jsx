@@ -74,7 +74,7 @@ const ProgressSection = () => {
         <div
           className={classes.popUp}
           style={{
-            top: progresData ? "-65%" : "-250%",
+            left: progresData ? "50%" : "-100%",
             opacity: progresData ? "1" : "0",
           }}
         >
