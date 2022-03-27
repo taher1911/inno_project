@@ -4,9 +4,11 @@ import classes from "./Progress.module.scss";
 import TextSection from "../Text";
 
 import Image from "next/image";
+import { useState } from "react";
 ////////// calender icon ///////////
 import { BsCalendar4Week } from "react-icons/bs";
 const ProgressSection = () => {
+  const [progresData, setProgressData] = useState(false);
   return (
     <section className={classes.container}>
       <TextSection
@@ -14,7 +16,11 @@ const ProgressSection = () => {
         description="Below is the calendar you can check the work in progress"
       />
       <div className={classes.progress}>
-        <div className={classes.progressBar}>
+        <div
+          className={classes.progressBar}
+          onMouseEnter={() => setProgressData(true)}
+          onMouseLeave={() => setProgressData(false)}
+        >
           <div className={classes.procressActive}>
             <div className={classes.start}>
               <Image
@@ -62,6 +68,23 @@ const ProgressSection = () => {
               <p>06 - May - 2022</p>
             </div>
           </div>
+        </div>
+
+        {/* pop up data section */}
+        <div
+          className={classes.popUp}
+          style={{
+            top: progresData ? "-65%" : "-250%",
+            opacity: progresData ? "1" : "0",
+          }}
+        >
+          <h3>this is test data</h3>
+          <p>
+            Lorem ipsum is a placeholder text commonly document or a typeface
+            without relying on meaningful content. Lorem ipsum is a placeholder
+            text commonly document or a typeface without relying on meaningful
+            content.
+          </p>
         </div>
       </div>
     </section>
