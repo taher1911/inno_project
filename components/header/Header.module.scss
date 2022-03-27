@@ -30,13 +30,22 @@
     display: flex;
     align-items: center;
     li {
-      margin-left: 40px;
+      margin-left: 20px;
+      padding: 0 20px;
       font-weight: 400;
       font-size: 16px;
       line-height: 100%;
       text-align: center;
       letter-spacing: 0.06em;
       text-transform: capitalize;
+      padding: 0 5px;
+
+      &:hover {
+        a {
+          transition: all 0.3s;
+          color: rgb(0, 255, 238);
+        }
+      }
       &:last-of-type {
         width: 172px;
         height: 52px;
@@ -46,10 +55,9 @@
         border-radius: 10px;
         font-weight: 700;
         font-size: 16px;
-        a {
-          display: block;
-          width: 100%;
-          height: 100%;
+        transition: all 0.3s;
+        &:hover {
+          box-shadow: 0px 0px 12px 2px rgba(0, 255, 240, 0.885839);
         }
       }
     }
