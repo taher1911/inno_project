@@ -18,7 +18,7 @@ const ProgressSection = () => {
       <div className={classes.progress}>
         <div
           className={classes.progressBar}
-          onMouseEnter={() => setProgressData(true)}
+          onMouseOver={() => setProgressData(true)}
           onMouseLeave={() => setProgressData(false)}
         >
           <div className={classes.procressActive}>
