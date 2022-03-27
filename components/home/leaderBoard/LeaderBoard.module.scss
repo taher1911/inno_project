@@ -52,6 +52,10 @@
           font-size: 15px;
           cursor: pointer;
           text-transform: capitalize;
+          transition: all 0.3s;
+          &:hover {
+            background: rgba(0, 255, 240, 0.885839) !important;
+          }
         }
       }
       form {
